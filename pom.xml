@@ -158,6 +158,10 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
+					<systemPropertyVariables>
+						<browser>${browser}</browser>
+						<appURL>${url}</appURL>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 

@@ -224,3 +224,11 @@ remote stacktrace: Backtrace:
 2021-04-23 12:51:02,050  INFO (com.wd.core.SeleniumWrapper:enterText -(Line Number-32)) - selenium entered on By.id: firstName
 2021-04-23 12:51:02,237  INFO (com.wd.core.SeleniumWrapper:enterText -(Line Number-32)) - hq entered on By.id: lastName
 2021-04-23 12:51:04,516  INFO (com.wd.core.SeleniumWrapper:click -(Line Number-19)) - clicked on By.xpath: //input[@value='Save']
+2021-04-23 13:02:45,449  INFO (com.wd.core.SeleniumWrapper:enterText -(Line Number-32)) - admin entered on By.id: txtUsername
+2021-04-23 13:02:45,681  INFO (com.wd.core.SeleniumWrapper:enterText -(Line Number-32)) - admin123 entered on By.name: txtPassword
+2021-04-23 13:02:49,547  INFO (com.wd.core.SeleniumWrapper:click -(Line Number-19)) - clicked on By.id: btnLogin
+2021-04-23 13:02:51,500  INFO (com.wd.core.SeleniumWrapper:click -(Line Number-19)) - clicked on By.linkText: PIM
+2021-04-23 13:02:52,510  INFO (com.wd.core.SeleniumWrapper:click -(Line Number-19)) - clicked on By.partialLinkText: Add Emp
+2021-04-23 13:02:52,736  INFO (com.wd.core.SeleniumWrapper:enterText -(Line Number-32)) - selenium entered on By.id: firstName
+2021-04-23 13:02:52,935  INFO (com.wd.core.SeleniumWrapper:enterText -(Line Number-32)) - hq entered on By.id: lastName
+2021-04-23 13:02:55,019  INFO (com.wd.core.SeleniumWrapper:click -(Line Number-19)) - clicked on By.xpath: //input[@value='Save']

@@ -14,6 +14,9 @@ public abstract class DriverFactory {
 
 	public static WebDriver getDriverFor(String brName) {
 
+		if (brName.equals(null)){
+			brName= System.getProperty("browser");
+		}
 		WebDriver driver=null;
 		switch (brName.toLowerCase()) {
 		case "chrome":
