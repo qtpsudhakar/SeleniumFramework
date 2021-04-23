@@ -16,7 +16,7 @@ public class LoginPage extends OhrmBase {
 
 	private static By Txt_UserName = By.id("txtUsername");
 	private static By Txt_Password = By.name("txtPassword");
-	private static By Btn_Login = By.id("btnLogin1");
+	private static By Btn_Login = By.id("btnLogin");
 	private static By elm_ErrorMsg = By.id("spanMessage");
 
 	public void enterUserName(String valueToEnter) {

@@ -1,5 +1,6 @@
 package com.wd.util;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,11 +18,12 @@ public abstract class DriverFactory {
 		switch (brName.toLowerCase()) {
 		case "chrome":
 			// specify browser driver exe file
-			System.setProperty("webdriver.chrome.driver", "F:\\SeleniumSoftware\\BrowserDrivers\\chromedriver.exe");
-			
+//			System.setProperty("webdriver.chrome.driver", "F:\\SeleniumSoftware\\BrowserDrivers\\chromedriver.exe");
+//
 			ChromeOptions co = new ChromeOptions();
 			co.addArguments("--disable-notifications");
-			
+//
+			WebDriverManager.chromedriver().setup();
 			// opens chrome browser
 			driver = new ChromeDriver(co);
 
@@ -29,8 +31,8 @@ public abstract class DriverFactory {
 
 		case "firefox":
 			// specify browser driver exe file
-			System.setProperty("webdriver.gecko.driver", "F:\\SeleniumSoftware\\BrowserDrivers\\geckodriver.exe");
-
+//			System.setProperty("webdriver.gecko.driver", "F:\\SeleniumSoftware\\BrowserDrivers\\geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
 			FirefoxProfile p = new FirefoxProfile();
 			p.setPreference("dom.webnotifications.enabled", false);
 			FirefoxOptions fo = new FirefoxOptions();
@@ -43,8 +45,8 @@ public abstract class DriverFactory {
 
 		case "edge":
 			// specify browser driver exe file
-			System.setProperty("webdriver.edge.driver", "F:\\SeleniumSoftware\\BrowserDrivers\\MicrosoftWebDriver.exe");
-
+//			System.setProperty("webdriver.edge.driver", "F:\\SeleniumSoftware\\BrowserDrivers\\MicrosoftWebDriver.exe");
+			WebDriverManager.edgedriver().setup();
 			// opens edge browser
 			driver = new EdgeDriver();
 
@@ -52,8 +54,8 @@ public abstract class DriverFactory {
 
 		case "ie":
 			// specify browser driver exe file
-			System.setProperty("webdriver.ie.driver", "F:\\SeleniumSoftware\\BrowserDrivers\\IEDriverServer.exe");
-
+//			System.setProperty("webdriver.ie.driver", "F:\\SeleniumSoftware\\BrowserDrivers\\IEDriverServer.exe");
+			WebDriverManager.iedriver().setup();
 			// opens IE browser
 			driver = new InternetExplorerDriver();
 
@@ -61,8 +63,8 @@ public abstract class DriverFactory {
 
 		default:
 			// specify browser driver exe file
-			System.setProperty("webdriver.chrome.driver", "F:\\SeleniumSoftware\\BrowserDrivers\\chromedriver.exe");
-
+//			System.setProperty("webdriver.chrome.driver", "F:\\SeleniumSoftware\\BrowserDrivers\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			// opens chrome browser
 			driver = new ChromeDriver();
 
